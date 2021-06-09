@@ -1,0 +1,69 @@
+numbers=[1,1,1,1,1]
+target=3
+
+from itertools import product
+def solution(numbers, target):
+  l=[(x,-x) for x in numbers]
+  s=list(map(sum,product(*l)))
+  return s.count(target)
+  
+print(solution(numbers, target))
+
+
+
+print("------------------------------")
+
+
+
+numbers=[3, 30, 34, 5, 9]
+
+
+def solution(numbers):
+  strlist=[]
+  for i in numbers:
+    strlist.append(str(i))
+  strlist.sort(key=lambda x:x*3, reverse=True)
+
+  answer="".join(strlist)
+  return answer
+
+print(solution(numbers))=9534330
+
+
+print("------------------------------")
+######################
+#input
+n=5
+yoon
+yu
+y
+y
+a
+
+#output
+a
+y
+yu
+yoon
+
+##################
+n=int(input())
+
+_set=set()
+
+for i in range(n):
+    _set.add(input())
+
+word=list(_set)
+
+print('word',word)
+word_list=[]
+
+for i in word:
+  word_list.append([len(i),i])
+
+print('word_list',word_list)
+word_list.sort(key=lambda w:[w[0],w[1]])
+
+for i in word_list:
+  print(i[1])
