@@ -67,3 +67,20 @@ word_list.sort(key=lambda w:[w[0],w[1]])
 
 for i in word_list:
   print(i[1])
+
+
+print("------------------------------")
+
+n=int(input())
+
+id_list=[]
+
+for i in range(n):
+  age,name=input().split(" ")
+  id_list.append((int(age),str(name)))
+
+
+id_list.sort(key=lambda w:w[0])
+
+for i in id_list:
+  print(i[0],i[1])
